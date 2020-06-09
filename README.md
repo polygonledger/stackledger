@@ -1,5 +1,6 @@
 # stackleger
 
+```
 python -m venv stackledger_env
 source stackledger_env/bin/activate
 git clone https://github.com/vyperlang/vyper
@@ -17,15 +18,22 @@ brownie compile
 
 yarn install
 yarn start
+```
 
 ## accounts
 
 add a localaccount in console
 
-accounts.add() 
+`accounts.add()`
 
-accounts[-1].balance()  
+check balance
 
-accounts[0].transfer(accounts[-1], "10 ether") 
+`accounts[-1].balance()`
 
-accounts[-1].private_key 
+transfer to the newly created account
+`accounts[0].transfer(accounts[-1], "10 ether") `
+
+export private key
+`accounts[-1].private_key`
+
+import privkey to metamask
